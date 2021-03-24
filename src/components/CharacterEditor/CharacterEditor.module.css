@@ -1,13 +1,17 @@
 .characterEditor {
   padding-top: 128px;
   padding-bottom: 64px;
+  isolation: isolate;
 }
 
 .maxWidthWrapper {
+  position: relative;
+  z-index: 2;
 }
 
 .header {
   padding-bottom: 64px;
+  width: 65%;
 }
 
 .title {
@@ -24,7 +28,14 @@
 }
 
 .characterWrapper {
+  background-color: hsl(195deg, 20%, 86%);
+  height: 40%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
 }
 
 .controlColumn {
+  width: 50%;
 }
